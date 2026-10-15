@@ -1,0 +1,13 @@
+import random
+def guess_number():
+    answer = random.randint(1, 100)
+    guess = 0
+    while guess != answer:
+        guess = int(input("猜一个1~100的数字："))
+        if guess > answer:
+            print("太大了")
+        elif guess < answer:
+            print("太小了")
+        else:
+            print("猜对了！答案就是", answer)
+guess_number()
